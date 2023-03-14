@@ -164,9 +164,10 @@ video {
 }
 
 @media only screen and (max-width: 600px) {
+
     .slider-container {
         top: 330px;
-        max-width: 250px;
+        max-width: 200px;
     }
 
     .container-box {
@@ -203,8 +204,12 @@ video {
     .tns-slide-active + div {
         margin-top: -30px;
         color: rgba(236, 255, 184, 0.6);
-        width: calc(100% - 40px);
-        margin-left: 15px;
+        width: calc(100% - 55px);
+        margin-left: 27px;
+    }
+    #tns1-item6 {
+        margin-left: 0px;
+        width: 100%;
     }
 
 
@@ -218,15 +223,43 @@ video {
         left: 67%;
     }
 
+    .logo-row > .logo-item > svg {
+        width: 50px;
+
+    }
+    .logo-row > .logo-item > .vk-logo {
+        width: 69px;
+        height: 64px;
+        margin-top: -3px;
+    }
 }
 .logo-row {
-    display: flex;
-    flex-flow: row;
-    align-items: center;
+    height: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    text-align: center;
 }
 
 .logo-item {
-    padding: 5px;
+    height: 100%;
+}
+
+.svg {
     width: 100%;
-    margin: 5px;
+}
+
+@media only screen and (max-width: 400px) {
+    .svg {
+        width: 30px;
+    }
+    .slider-container {
+        left: 47%;
+        font-size: 11px;
+        top: 310px;
+        max-width: 190px;
+    }
+}
+
+.vk-logo {
+    margin-top: -7px;
 }
