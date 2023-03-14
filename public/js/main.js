@@ -27,12 +27,22 @@ function changeBackground() {
     $('#' + selector + '-top').toggleClass('transparent');
     $('#' + selector + '-bottom').toggleClass('transparent');
 }
-
+var slider = tns({
+    container: '.my-slider',
+    items: 1,
+    axis: "vertical",
+    slideBy: 'page',
+    center: true,
+    loop: false,
+    gutter: 40,
+});
 function btnUp(e) {
-    console.log('up');
+    slider.goTo('prev');
+
 }
 
 function btnDown() {
-    console.log('down');
+    slider.goTo('next');
 }
+
 
